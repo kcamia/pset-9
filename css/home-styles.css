@@ -10,3 +10,16 @@ h1 {
   font-size: 55px;
   margin: 2%;
 }
+
+a:link, a:visited {
+  background-color: rgb(3, 132, 252);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(101, 144, 184);
+}
