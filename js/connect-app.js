@@ -9,7 +9,8 @@ let board;
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 
 window.onload = init;
-const circles = Array.from(document.querySelectorAll("display"))
+const circles = Array.from(document.querySelectorAll("display"));
+document.getElementById("display").onclick = takeTurn;
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
 
@@ -22,6 +23,8 @@ funtion init() {
     "", "", "", "", "", "", "",
     "", "", "", "", "", "", ""
   ];
+
+  turn = "R";
 
   render();
 }
