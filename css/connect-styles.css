@@ -15,24 +15,24 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  height: 250px;
+  width: 290px;
 }
 
-.column {
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
+.board {
+  width: 40px;
 }
 
-.square {
+.board:hover {
+  background-color: rgb(86, 163, 179)
+}
+
+.circle {
+  border-radius: 50%;
   border: 1px solid black;
-  height: 50px;
-  user-select: none;
-  width: 150px;
-}
-
-.square:hover {
-  background-color: rgb(86, 163, 179);
-  cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
 #reset-button {
