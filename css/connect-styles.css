@@ -15,6 +15,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.column {
   flex-flow: row wrap;
   height: 250px;
   width: 290px;
