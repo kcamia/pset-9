@@ -10,3 +10,44 @@ h1 {
   font-size: 55px;
   margin: 2%;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.square {
+  border: 1px solid black;
+  height: 50px;
+  user-select: none;
+  width: 150px;
+}
+
+.square:hover {
+  background-color: rgb(86, 163, 179);
+  cursor: pointer;
+}
+
+#reset-button {
+  background-color: rgb(134, 217, 178);
+  border: 1px solid black;
+  color: black;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 1%;
+  text-align: center;
+  width: 456px;
+}
+
+#reset-button:hover {
+  background-color: rgb(100, 158, 131);
+  color: white;
+  cursor: pointer;
+}
