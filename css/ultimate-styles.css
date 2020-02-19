@@ -10,3 +10,86 @@ h1 {
   font-size: 55px;
   margin: 2%;
 }
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+}
+
+button {
+  font-size: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.container {
+  display: flex;                /* set our display property to use flex-box */
+  justify-content: center;      /* center container horizontally */
+  align-items: center;          /* center content vertically */
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;       /* align children in columns instead of rows */
+}
+
+.wrap {
+  flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
+  height: 456px;
+  width: 456px;
+}
+
+.square {
+  border: 2px solid rgba(0, 0, 0, 0.75);
+  font-size: 96px;
+  height: 150px;
+  line-height: 150px;
+  user-select: none;
+  width: 150px;
+  display: flex;                /* set our display property to use flex-box */
+  justify-content: center;      /* center container horizontally */
+  align-items: center;
+  flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
+  height: 128px;
+  width: 128px;
+}
+
+.mini {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  user-select: none;
+  width: 40px;
+}
+
+.square:hover {
+  background-color: rgb(86, 163, 179);
+  cursor: pointer;
+}
+
+#scoreboard {
+  border: 1px solid black;
+  height: 75px;
+  background-color: white;
+}
+
+#reset-button {
+  background-color: rgb(134, 217, 178);
+  border: 1px solid black;
+  color: black;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 1%;
+  text-align: center;
+  width: 456px;
+}
+
+#reset-button:hover {
+  background-color: rgb(100, 158, 131);
+  color: white;
+  cursor: pointer;
+}
