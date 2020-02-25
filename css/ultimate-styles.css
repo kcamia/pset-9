@@ -53,8 +53,10 @@ button {
   justify-content: center;      /* center container horizontally */
   align-items: center;
   flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
-  height: 128px;
-  width: 128px;
+  height: 129px;
+  width: 129px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .mini {
@@ -66,7 +68,7 @@ button {
   width: 40px;
 }
 
-.square:hover {
+.mini:hover {
   background-color: rgb(86, 163, 179);
   cursor: pointer;
 }
