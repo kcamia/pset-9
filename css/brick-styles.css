@@ -14,3 +14,8 @@ h1 {
 #breakout {
   border: 1px solid black;
 }
+
+p {
+  text-align: center;
+  font-size: 30px;
+}

@@ -32,6 +32,8 @@ let GAME_OVER = false;
 let leftArrow = false;
 let rightArrow = false;
 
+
+
 const paddle = {
   x : cvs.width/2 - PADDLE_WIDTH/2,
   y : cvs.height - PADDLE_MARGIN_BOTTOM - PADDLE_HEIGHT,
