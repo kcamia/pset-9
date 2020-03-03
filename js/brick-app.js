@@ -27,6 +27,7 @@ const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
 let LIFE = 3;
+let GAME_OVER = false;
 let leftArrow = false;
 let rightArrow = false;
 
@@ -195,6 +196,11 @@ function draw() {
   showGameStats(LIFE, cvs.width - 25, 25, LIVES_IMG, cvs.width-55, 5);
 }
 
+function gameOver() {
+  if (LIFE <= 0) {
+    GAME_OVER = true;
+  }
+}
 
 function update() {
   movePaddle();
@@ -202,12 +208,15 @@ function update() {
   ballWallColision();
   ballPaddleCollision();
   ballBrickCollision();
+  gameOver();
 }
 
 function loop() {
   ctx.drawImage(IMG, 0, 0);
   draw();
   update();
-  requestAnimationFrame(loop);
+  if (!GAME_OVER) {
+    requestAnimationFrame(loop);
+  }
 }
 loop();
