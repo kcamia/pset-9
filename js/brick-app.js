@@ -215,6 +215,8 @@ function levelUp() {
     ball.speed += 0.5;
     resetBall();
     LEVEL++;
+    let display = document.getElementById("score");
+    display.innerHTML = LEVEL;
   }
 }
 
