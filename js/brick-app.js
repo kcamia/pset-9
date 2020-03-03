@@ -27,6 +27,7 @@ const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
 let LIFE = 3;
+let LEVEL = 0;
 let GAME_OVER = false;
 let leftArrow = false;
 let rightArrow = false;
@@ -202,6 +203,21 @@ function gameOver() {
   }
 }
 
+function levelUp() {
+  let isLevelDone = true;
+  for (let r = 0; r < brick.row; r++) {
+    for (let c = 0; c < brick.column; c++) {
+      isLevelDone = isLevelDone && ! bricks[r][c].status;
+    }
+  }
+  if (isLevelDone) {
+    createBricks();
+    ball.speed += 0.5;
+    resetBall();
+    LEVEL++;
+  }
+}
+
 function update() {
   movePaddle();
   moveBall();
@@ -209,6 +225,7 @@ function update() {
   ballPaddleCollision();
   ballBrickCollision();
   gameOver();
+  levelUp();
 }
 
 function loop() {
