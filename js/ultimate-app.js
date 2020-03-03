@@ -204,6 +204,13 @@ function render() {
   } else {
     message.textContent = win ? `${overallWin} wins!` : `Turn: ${turn}`;
   }
+
+  let x = document.getElementById("tied-score");
+  x.innerHTML = tieScore;
+  let y = document.getElementById("player1-score");
+  y.innerHTML = scoreX;
+  let z = document.getElementById("player2-score");
+  z.innerHTML = scoreO;
 }
 
 function takeTurn(e) {
@@ -688,7 +695,8 @@ function checkTie(){
   ) {
     console.log("There is an OVERALL TIE");
     win = false;
-    winner = "T"
+    winner = "T";
+    tieScore++;
     draw = true;
   }
 
