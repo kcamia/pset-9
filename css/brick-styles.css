@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  font-family: "Roboto", monospace;
+  background-color: rgb(143, 203, 227);
+}
+
+h1 {
+  margin: 0 auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 55px;
+  margin: 2%;
+}
+
+#breakout {
+  border: 1px solid black;
+}

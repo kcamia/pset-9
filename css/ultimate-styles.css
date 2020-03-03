@@ -30,6 +30,62 @@ button {
   align-items: center;
 }
 
+.small-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  height: 474px;
+  width: 474px;
+}
+
+.square {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  height: 156px;
+  user-select: none;
+  width: 156px;
+}
+
+
+.mini {
+  border: 1px solid rgba(8, 34, 66);
+  height: 50px;
+  user-select: none;
+  width: 50px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.square:hover {
+  background-color: rgb(86, 163, 179);
+  cursor: pointer;
+}
+
+
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .column {
   height: 100%;
   width: 100%;
@@ -46,21 +102,12 @@ button {
   border: 2px solid rgba(0, 0, 0, 0.75);
   font-size: 96px;
   height: 150px;
-  line-height: 150px;
   user-select: none;
   width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;              
-  height: 129px;
-  width: 129px;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .mini {
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(8, 34, 66);
   font-size: 12px;
   height: 40px;
   line-height: 40px;
@@ -68,10 +115,10 @@ button {
   width: 40px;
 }
 
-.mini:hover {
+.square:hover {
   background-color: rgb(86, 163, 179);
   cursor: pointer;
-}
+} */
 
 #scoreboard {
   border: 1px solid black;
