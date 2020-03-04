@@ -1,7 +1,6 @@
 ///////////////////// CONSTANTS /////////////////////////////////////
 
 const miniWinningConditions1 = [
-  //minibox 1
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
@@ -13,7 +12,6 @@ const miniWinningConditions1 = [
 ]
 
 const miniWinningConditions2 = [
-  //minibox 2
   [11, 12, 13],
   [14, 15, 16],
   [17, 18, 19],
@@ -25,7 +23,6 @@ const miniWinningConditions2 = [
 ]
 
 const miniWinningConditions3 = [
-  //minibox 3
   [21, 22, 23],
   [24, 25, 26],
   [27, 28, 29],
@@ -37,7 +34,6 @@ const miniWinningConditions3 = [
 ]
 
 const miniWinningConditions4 = [
-  //minibox 4
   [31, 32, 33],
   [34, 35, 36],
   [37, 38, 39],
@@ -49,7 +45,6 @@ const miniWinningConditions4 = [
 ]
 
 const miniWinningConditions5 = [
-  //minibox 5
   [41, 42, 43],
   [44, 45, 46],
   [47, 48, 49],
@@ -61,7 +56,6 @@ const miniWinningConditions5 = [
 ]
 
 const miniWinningConditions6 = [
-  //minibox 6
   [51, 52, 53],
   [54, 55, 56],
   [57, 58, 59],
@@ -73,7 +67,6 @@ const miniWinningConditions6 = [
 ]
 
 const miniWinningConditions7 = [
-  //minibox 7
   [61, 62, 63],
   [64, 65, 66],
   [67, 68, 69],
@@ -85,7 +78,6 @@ const miniWinningConditions7 = [
 ]
 
 const miniWinningConditions8 = [
-  //minibox 8
   [71, 72, 73],
   [74, 75, 76],
   [77, 78, 79],
@@ -97,7 +89,6 @@ const miniWinningConditions8 = [
 ]
 
 const miniWinningConditions9 = [
-  //minibox 9
   [81, 82, 83],
   [84, 85, 86],
   [87, 88, 89],
@@ -146,8 +137,6 @@ let counter = 0;
 
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
-const scoreXMessage = document.querySelector("h3");
-const scoreOMessage = document.querySelector("h4");
 
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 
@@ -657,7 +646,6 @@ function getOverallWinner(){
     win = true;
     winner = "X";
     scoreX++;
-    scoreXMessage.textContent = scoreX;
   } else if (
     (localWin1 === "O" && localWin2 === "O" && localWin3 === "O") ||
     (localWin4 === "O" && localWin5 === "O" && localWin6 === "O") ||
@@ -673,7 +661,6 @@ function getOverallWinner(){
     win = true;
     winner = "O";
     scoreO++;
-    scoreOMessage.textContent = scoreO;
   } else {
   }
 
