@@ -1,5 +1,5 @@
 .topnav {
-  background-color: #333;
+  background-color: #2d5a91;
   overflow: hidden;
   padding: 20px;
 }
@@ -13,12 +13,12 @@
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #a5a9b5;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #1a9fba;
   color: white;
 }
 
