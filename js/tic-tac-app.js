@@ -127,6 +127,5 @@ function getWinner() {
   });
 
   return winner ? winner : board.includes("") ? null : "T";
-
-
+  
 }

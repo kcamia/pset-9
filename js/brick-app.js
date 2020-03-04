@@ -6,6 +6,7 @@ IMG.src = "img/space.jpg";
 const LIVES_IMG = new Image();
 LIVES_IMG.src = "img/lives.png";
 
+
 const PADDLE_WIDTH = 100;
 const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;

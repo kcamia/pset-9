@@ -95,55 +95,6 @@ button {
   cursor: pointer;
 }
 
-
-
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.small-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.column {
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-}
-
-.wrap {
-  flex-wrap: wrap;
-  height: 456px;
-  width: 456px;
-}
-
-.square {
-  border: 2px solid rgba(0, 0, 0, 0.75);
-  font-size: 96px;
-  height: 150px;
-  user-select: none;
-  width: 150px;
-}
-
-.mini {
-  border: 1px solid rgba(8, 34, 66);
-  font-size: 12px;
-  height: 40px;
-  line-height: 40px;
-  user-select: none;
-  width: 40px;
-}
-
-.square:hover {
-  background-color: rgb(86, 163, 179);
-  cursor: pointer;
-} */
-
 #scoreboard {
   border: 1px solid black;
   height: 75px;

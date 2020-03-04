@@ -1,4 +1,3 @@
-
  .topnav {
    background-color: #2d5a91;
    overflow: hidden;
@@ -63,7 +62,7 @@ button {
 }
 
 .wrap {
-  flex-wrap: wrap;          
+  flex-wrap: wrap;
   height: 456px;
   width: 456px;
 }

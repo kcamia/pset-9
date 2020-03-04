@@ -166,7 +166,6 @@ function oGoesFirst() {
 
 function init() {
   board = [];
-
   for (x = 0; x < 90; x++) {
     if (x % 10 === 0) {
       squares[x].id = "";
